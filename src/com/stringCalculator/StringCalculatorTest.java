@@ -27,4 +27,10 @@ public class StringCalculatorTest {
 		assertEquals(3,result);
 	}
 	
+	@Test
+	public void unknownNumberAddTest() {
+		StringCalculator sc = new StringCalculator();
+		int result = sc.Add("1,3,4,5,6");
+		assertEquals(19,result);
+	}
 }
